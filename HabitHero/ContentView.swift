@@ -9,25 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let habits: [Habit]
+    @State var habits: [Habit]
                 
     var body: some View {
         ScrollView {
             VStack {
-                ForEach(habits) { habit in
-                    Text(habit.description)
+                ForEach($habits) { habit in
+                    HabitCard(habit: habit)
                 }
             }
+            .padding()
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(habits: [
-            Habit.example,
-            Habit.example,
-            Habit.example
-        ])
+        ContentView(habits: Habit.exampleHabits100)
+        .preferredColorScheme(.dark)
     }
 }

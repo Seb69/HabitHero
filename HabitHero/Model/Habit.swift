@@ -23,23 +23,25 @@ struct Habit: Identifiable {
 
 extension Habit {
     static var example: Habit {
-        return Habit(id: .init(), description: "Read", duration: 60, priority: .high)
+        return Habit(id: .init(), description: "Read, review and recap at least 50 pages from a given book to make sure that I grasp the concepts/ideas presented", duration: 60, priority: .high)
     }
     static var exampleMediumPriority: Habit {
         return Habit(id: .init(),
-                     description: "Have a run at 11AM every morning in order to improve stamina and my morbid obesity",
+                     description: "Have a run at 11AM, a healthy body could be transposed into a healthy mind",
                      duration: 70,
                      priority: .medium,
                      isCompleted: true)
     }
     static var exampleLowPriority: Habit {
-        return Habit(id: .init(), description: "Eating a healthy meal in order not to get more morbidly obese", duration: 70, priority: .low)
+        return Habit(id: .init(), description: "Eating a healthy meal. Healthy noutrition is 80% of the struggle", duration: 70, priority: .low)
     }
     static var exampleHabits: [Habit] {
         return [
-            .example,
             .exampleMediumPriority,
-            .exampleLowPriority
+            .exampleLowPriority,
+            .init(id: .init(), description: "Go swimming at 12", duration: 100, priority: .medium),
+            .init(id: .init(), description: "Meditate", duration: 15, priority: .low),
+            .example,
         ]
     }
     static var exampleHabits100: [Habit] {

@@ -8,19 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let habits: [Habit]
+                
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello")
+        ScrollView {
+            VStack {
+                ForEach(habits) { habit in
+                    Text(habit.description)
+                }
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(habits: [
+            Habit.example,
+            Habit.example,
+            Habit.example
+        ])
     }
 }

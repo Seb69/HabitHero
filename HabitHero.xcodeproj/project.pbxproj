@@ -14,6 +14,7 @@
 		FA3AF1FD2941B77B00BC91C8 /* HabitHeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AF1FC2941B77B00BC91C8 /* HabitHeroTests.swift */; };
 		FA3AF2072941B77B00BC91C8 /* HabitHeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AF2062941B77B00BC91C8 /* HabitHeroUITests.swift */; };
 		FA3AF2092941B77B00BC91C8 /* HabitHeroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AF2082941B77B00BC91C8 /* HabitHeroUITestsLaunchTests.swift */; };
+		FA3AF2162941BE2600BC91C8 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AF2152941BE2600BC91C8 /* Habit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		FA3AF2022941B77B00BC91C8 /* HabitHeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitHeroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3AF2062941B77B00BC91C8 /* HabitHeroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitHeroUITests.swift; sourceTree = "<group>"; };
 		FA3AF2082941B77B00BC91C8 /* HabitHeroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitHeroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA3AF2152941BE2600BC91C8 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		FA3AF1E92941B77A00BC91C8 /* HabitHero */ = {
 			isa = PBXGroup;
 			children = (
+				FA3AF2172941BE3500BC91C8 /* Model */,
 				FA3AF1EA2941B77A00BC91C8 /* HabitHeroApp.swift */,
 				FA3AF1EC2941B77A00BC91C8 /* ContentView.swift */,
 				FA3AF1EE2941B77B00BC91C8 /* Assets.xcassets */,
@@ -127,6 +130,14 @@
 				FA3AF2082941B77B00BC91C8 /* HabitHeroUITestsLaunchTests.swift */,
 			);
 			path = HabitHeroUITests;
+			sourceTree = "<group>";
+		};
+		FA3AF2172941BE3500BC91C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA3AF2152941BE2600BC91C8 /* Habit.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3AF2162941BE2600BC91C8 /* Habit.swift in Sources */,
 				FA3AF1ED2941B77A00BC91C8 /* ContentView.swift in Sources */,
 				FA3AF1EB2941B77A00BC91C8 /* HabitHeroApp.swift in Sources */,
 			);
